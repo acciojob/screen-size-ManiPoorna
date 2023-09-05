@@ -3,5 +3,7 @@ const h1 = document.querySelector("h1");
 
 window.addEventListener("resize",(e)=>{
 	e.preventDefault();
-	h1.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`
+	const expectedWidth = window.innerWidth
+	const expectedHeight = window.innerHeight
+	h1.innerText = `Width: ${expectedWidth} and Height: ${expectedHeight}`
 })
